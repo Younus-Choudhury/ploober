@@ -374,3 +374,32 @@ with st.expander("Report on the Determinants of Health Insurance Charges : A Sta
         * **Maintain a Healthy Lifestyle:** Given the strong correlation between BMI and costs, managing weight through diet and exercise is a statistically proven way to reduce long-term healthcare expenses.
         * **Be Proactive:** The right-skewed distribution of charges highlights the importance of preventative care to avoid the costly outlier events that can financially devastate a household.
         """)
+
+with st.expander("AI generated Print & Radio Ad Campaign ideas"):
+    st.markdown("""
+        Decreasing insurance premiums and helping consumers save money by nudging them to make better choices could have 3 winners: the consumer that saves money, the insurance company that lowers their risk, and also government by saving money on preventable diseases.
+
+        I asked AI (Gemini, ChatGPT, Deepseek, Claude) to come up with some ideas; the following are the best ones:
+
+        **Insurance that rewards you for getting healthier** — turning lifestyle improvement into a game where the prize is cheaper cover. This approach leans into Rory Sutherland’s “make the right thing feel like the fun thing” philosophy.
+
+        ### PRINT AD 1 – “The Sliding Scale” (Newspaper)
+        **Headline:** “The Only Bill That Gets Smaller When You Do.”
+        **Visual:** A ruler or measuring tape that shortens into a thinner, smaller insurance bill.
+        **Copy:** What if your insurance didn’t punish you for bad luck — but rewarded you for good choices? Our new policy drops your premium every time you hit a new health milestone. Walk more, eat better, feel great — and watch your bill shrink. It’s health insurance that’s on your side… and in your corner.
+
+        ### PRINT AD 2 – “Level Up Your Life” (Magazine)
+        **Headline:** “Every Step You Take, Your Premium Takes One Back.”
+        **Visual:** A smartwatch screen showing “10,000 steps” alongside an insurance premium ticking down.
+        **Copy:** You don’t have to overhaul your life overnight. Just start. Each healthier choice you make — from your first run to your hundredth — nudges your premium lower. It’s like levelling up in a game, except the reward is real money in your pocket.
+
+        ### PRINT AD 3 – “The Reverse Tax” (Outdoor Poster)
+        **Headline:** “The Better You Feel, The Less You Pay.”
+        **Visual:** A smiling person dropping a gym bag on the floor, coins spilling out instead of sports gear.
+        **Copy:** Most bills go up over time. Yours doesn’t have to. Get healthier, and watch your insurance cost go into reverse. It’s the rare bill you’ll actually want to check.
+
+        ### RADIO SCRIPT – 30 Seconds
+        **Title:** “The Bill That Cheers You On”
+        **SFX:** Sneakers hitting pavement, upbeat music building.
+        **VOICE (friendly, encouraging):** Imagine a bill that roots for you. One that gets smaller every time you get fitter, take the stairs, or swap a snack for something better. That’s our health insurance. The healthier you get, the less you pay. Simple, fair — and maybe even fun. Call us today and start making your bill your biggest supporter.
+    """)
