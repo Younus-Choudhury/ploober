@@ -837,6 +837,74 @@ with st.expander("AI generated Print & Radio Ad Campaign ideas"):
 
     """)
 
+with st.expander("AI generated Print & Radio Ad Campaign ideas"):
+
+
+    st.markdown("""
+
+
+       This report examines 1,338 individual health insurance records to identify the strongest drivers of cost. The dataset includes age, sex, BMI, number of children, smoking status, region, and annual charges. The analysis focuses on mean costs, distribution patterns, and key contrasts between groups.
+1. Data Snapshot
+
+    Average age: 39 years (range: 18–64)
+
+    Average BMI: 30.66 (in the obese range; range: 15.96–53.13)
+
+    Average annual charge: $13,270 (range: $1,122–$63,770)
+
+    Sex split: 50.5% male, 49.5% female
+
+    Smoker prevalence: 20.5% yes, 79.5% no
+
+    Regional distribution: Roughly even across four US regions, with the Southeast largest (27%).
+
+2. Main Findings
+2.1 Smoking is the Largest Cost Driver
+
+Smokers pay on average nearly four times more than non-smokers.
+
+    Smokers: mean $32,050
+
+    Non-smokers: mean $8,440
+    The gap is consistent across all age groups and BMI ranges, making smoking the clearest and most defensible pricing determinant.
+
+2.2 Age Matters, but Predictably
+
+Costs rise steadily with age, from an average of $8,400 in the 18–25 group to over $21,000 for those aged 56–65. This reflects natural increases in healthcare needs over the life cycle.
+2.3 BMI Links to Cost, But with Caveats
+
+Higher BMI correlates with higher average charges. People in the “Obese II+” category (BMI ≥ 35) pay about 50% more than those in the “Normal” range. However, the relationship is weaker than smoking or age, and there is substantial variation within each BMI category.
+2.4 Minor Factors: Children, Gender, Region
+
+    Children: Small, inconsistent effects on costs.
+
+    Gender: Men pay slightly more than women on average.
+
+    Region: The Southeast has the highest average costs; differences elsewhere are small.
+
+3. Ethical Considerations
+
+BMI is not a perfect measure of health. Overemphasis could unfairly penalize individuals, especially younger women, who may already face strong body image pressures. Tying pricing too closely to BMI risks fuelling disordered eating and weight stigma. Environmental and socioeconomic factors also affect BMI beyond personal control.
+Smoking, by contrast, is a voluntary and well-proven risk factor with a direct causal link to higher medical costs. Highlighting smoking as the main determinant in pricing is both ethically and commercially sound. BMI can remain as one signal in a broader risk model, but not as a blunt pricing lever.
+4. Recommendations
+
+    Weight premiums heavily on smoking status and reward quitting through lower rates.
+
+    Incorporate age in a predictable tiered structure to match rising health costs over time.
+
+    Treat BMI cautiously, using it in combination with other health indicators.
+
+    Offer health incentives — cessation programs for smokers, lifestyle support for weight management — as cost-control strategies.
+
+    Review regional pricing for the Southeast and investigate underlying drivers.
+
+5. Conclusion
+
+The strongest and most actionable insight from this dataset is that smoking is the single biggest cost driver in individual health insurance, followed by age. BMI has a measurable effect but should be handled with care to avoid ethical and reputational risks. A pricing strategy anchored in these facts can be both fair and financially robust.
+
+    """)
+
+
 
 
 
