@@ -316,6 +316,35 @@ with st.expander("Show Data Insights"):
     )
     st.plotly_chart(fig_px, use_container_width=True)
 
+with st.expander("AI generated Print & Radio Ad Campaign ideas"):
+    st.markdown("""
+        Decreasing insurance premiums and helping consumers save money by nudging them to make better choices could have 3 winners: the consumer that saves money, the insurance company that lowers their risk, and also government by saving money on preventable diseases.
+
+        I asked AI (Gemini, ChatGPT, Deepseek, Claude) to come up with some ideas; the following are the best ones:
+
+        **Insurance that rewards you for getting healthier** — turning lifestyle improvement into a game where the prize is cheaper cover. This approach leans into Rory Sutherland’s “make the right thing feel like the fun thing” philosophy.
+
+        ### PRINT AD 1 – “The Sliding Scale” (Newspaper)
+        **Headline:** “The Only Bill That Gets Smaller When You Do.”
+        **Visual:** A ruler or measuring tape that shortens into a thinner, smaller insurance bill.
+        **Copy:** What if your insurance didn’t punish you for bad luck — but rewarded you for good choices? Our new policy drops your premium every time you hit a new health milestone. Walk more, eat better, feel great — and watch your bill shrink. It’s health insurance that’s on your side… and in your corner.
+
+        ### PRINT AD 2 – “Level Up Your Life” (Magazine)
+        **Headline:** “Every Step You Take, Your Premium Takes One Back.”
+        **Visual:** A smartwatch screen showing “10,000 steps” alongside an insurance premium ticking down.
+        **Copy:** You don’t have to overhaul your life overnight. Just start. Each healthier choice you make — from your first run to your hundredth — nudges your premium lower. It’s like levelling up in a game, except the reward is real money in your pocket.
+
+        ### PRINT AD 3 – “The Reverse Tax” (Outdoor Poster)
+        **Headline:** “The Better You Feel, The Less You Pay.”
+        **Visual:** A smiling person dropping a gym bag on the floor, coins spilling out instead of sports gear.
+        **Copy:** Most bills go up over time. Yours doesn’t have to. Get healthier, and watch your insurance cost go into reverse. It’s the rare bill you’ll actually want to check.
+
+        ### RADIO SCRIPT – 30 Seconds
+        **Title:** “The Bill That Cheers You On”
+        **SFX:** Sneakers hitting pavement, upbeat music building.
+        **VOICE (friendly, encouraging):** Imagine a bill that roots for you. One that gets smaller every time you get fitter, take the stairs, or swap a snack for something better. That’s our health insurance. The healthier you get, the less you pay. Simple, fair — and maybe even fun. Call us today and start making your bill your biggest supporter.
+    """)
+
 with st.expander("Report on the Determinants of Health Insurance Charges : A Statistical Analytical Review"):
     st.markdown("""
         ### Report on the Determinants of Health Insurance Charges: A Statistical and Analytical Review
@@ -403,3 +432,277 @@ with st.expander("AI generated Print & Radio Ad Campaign ideas"):
         **SFX:** Sneakers hitting pavement, upbeat music building.
         **VOICE (friendly, encouraging):** Imagine a bill that roots for you. One that gets smaller every time you get fitter, take the stairs, or swap a snack for something better. That’s our health insurance. The healthier you get, the less you pay. Simple, fair — and maybe even fun. Call us today and start making your bill your biggest supporter.
     """)
+
+
+with st.expander("AI generated Print & Radio Ad Campaign ideas"):
+    st.markdown("""
+
+
+COMPREHENSIVE INSURANCE DATA ANALYSIS REPORT
+Visual Analytics for Insurance and Public Health Professionals
+================================================================================
+Report Generated: 2025-08-12 13:02:32 UK Time
+Target Audience: Insurance Industry & Public Health Sector
+
+EXECUTIVE SUMMARY
+--------------------------------------------------
+This report presents a comprehensive analysis of insurance claim data through
+seven key visualizations, revealing critical insights about risk factors,
+demographic patterns, and health-related cost drivers. The analysis demonstrates
+clear opportunities for collaborative interventions between insurance providers
+and public health authorities to promote healthier lifestyles while reducing
+financial risks for all stakeholders.
+
+DETAILED CHART ANALYSIS
+==================================================
+
+1. CHARGES BY SMOKER STATUS (Box Plot Analysis)
+---------------------------------------------
+KEY FINDINGS:
+� Smoking creates the most dramatic cost differential in the dataset
+� Smokers show median charges approximately 3.5x higher than non-smokers
+� Non-smoker charges cluster tightly around $8,000-$12,000
+� Smoker charges demonstrate high variability ($20,000-$45,000 range)
+� Clear bimodal distribution suggests smoking is a primary risk stratifier
+
+INDUSTRY IMPLICATIONS:
+� Smoking cessation programs could significantly reduce claim costs
+� Premium differentiation is strongly justified by cost data
+� Investment in smoking cessation yields measurable ROI for insurers
+� Public health campaigns targeting smoking have direct financial benefits
+
+2. CORRELATION MATRIX ANALYSIS (Heatmap)
+----------------------------------------
+KEY FINDINGS:
+� Age shows moderate positive correlation with charges (0.30)
+� BMI demonstrates weaker but notable correlation with charges (0.20)
+� Number of children shows minimal impact on charges (0.07)
+� Age and BMI are weakly correlated (0.11), suggesting independent risk factors
+
+STRATEGIC INSIGHTS:
+� Age-based pricing models are statistically supported
+� BMI screening programs could identify moderate-risk populations
+� Family size has minimal impact on individual health costs
+� Multi-factor risk models should weight age more heavily than BMI
+
+3. CHARGES DISTRIBUTION ANALYSIS (Histogram with KDE)
+--------------------------------------------------
+KEY FINDINGS:
+� Highly right-skewed distribution with long tail toward high costs
+� Majority of claims cluster in $1,000-$15,000 range
+� Significant outlier population above $40,000 (likely smokers)
+� Bimodal tendency suggests two distinct risk populations
+
+BUSINESS IMPLICATIONS:
+� Standard actuarial models may underestimate high-cost tail risk
+� Case management programs should target high-cost outliers
+� Preventive care investments could shift the distribution leftward
+� Risk pooling benefits from mixing low and high-risk populations
+
+4. MEDIAN CHARGES BY REGION (Bar Chart Analysis)
+------------------------------------------------
+KEY FINDINGS:
+� Northeast shows highest median charges (~$10,200)
+� Regional variation is relatively modest (15% difference)
+� Southeast and Southwest show similar median costs (~$9,100-$8,800)
+� Northwest demonstrates lowest median charges (~$8,900)
+
+GEOGRAPHIC RISK FACTORS:
+� Northeast may reflect higher healthcare costs or lifestyle factors
+� Regional differences suggest localized intervention opportunities
+� Cost variations may correlate with urban density and healthcare infrastructure
+� Geographic risk adjustment should be considered in pricing models
+
+5. AGE AND SMOKING IMPACT ANALYSIS (Scatter Plot)
+-----------------------------------------------
+KEY FINDINGS:
+� Clear linear relationship between age and charges for both groups
+� Smoking effect is consistent across all age groups
+� Young smokers (20-30) already show elevated costs vs older non-smokers
+� Cost gap between smokers and non-smokers widens with age
+� Older smokers (50+) represent highest-risk, highest-cost segment
+
+TARGETED INTERVENTION OPPORTUNITIES:
+� Early intervention with young smokers prevents exponential cost growth
+� Age-stratified smoking cessation programs maximize cost-benefit ratio
+� Predictive modeling can identify high-risk aging smoker populations
+� Wellness programs should prioritize smoking cessation over age-related factors
+
+6. DEMOGRAPHIC RISK FACTORS ANALYSIS (Multi-Panel Box Plots)
+------------------------------------------------------------
+GENDER ANALYSIS:
+� Minimal cost difference between male and female populations
+� Similar median costs and variance patterns
+� Gender-neutral pricing appears statistically justified
+
+SMOKING STATUS (Detailed View):
+� Reinforces findings from Chart 1 with enhanced detail
+� Non-smoker costs tightly controlled with few outliers
+� Smoker population shows extreme cost variability
+
+REGIONAL PATTERNS (Detailed View):
+� All regions show similar outlier patterns (likely smokers)
+� Regional median differences confirmed from Chart 4
+� Smoking appears to be primary driver across all regions
+
+7. MULTI-FACTOR RELATIONSHIP ANALYSIS (Three-Panel Correlation)
+-----------------------------------------------------------------
+AGE VS CHARGES:
+� Steady upward trend with moderate correlation
+� Smoking status creates distinct parallel trend lines
+� Age effect is consistent but secondary to smoking impact
+
+BMI VS CHARGES:
+� Weaker relationship than age, with more scatter
+� Smoking effect dominates BMI influence
+� Moderate BMI elevation shows limited cost impact without smoking
+
+CHILDREN VS CHARGES:
+� Number of children shows minimal impact on individual costs
+� Cost distributions remain similar across family sizes
+� Family structure is not a significant risk predictor
+
+CONTEMPORARY HEALTH TRENDS ANALYSIS
+==================================================
+
+SMOKING TREND IMPLICATIONS:
+� Despite declining smoking rates, remaining smokers show intense cost impact
+� E-cigarette and vaping trends may create new risk categories
+� Concentrated high-risk populations require targeted interventions
+� Cessation program ROI increases as smoking populations become more concentrated
+
+OBESITY AND LIFESTYLE TRENDS:
+� Rising BMI levels correlate with increased dining out and processed food consumption
+� Sedentary lifestyle trends (remote work, screen time) compound obesity risks
+� Food delivery culture and convenience eating patterns drive weight gain
+� Current data may underestimate future BMI-related cost increases
+
+DEMOGRAPHIC SHIFT IMPLICATIONS:
+� Aging population will intensify age-related cost pressures
+� Regional urbanization affects healthcare access and lifestyle factors
+� Economic pressures may increase smoking rates in vulnerable populations
+� Mental health trends affect both smoking and eating behaviors
+
+STRATEGIC RECOMMENDATIONS
+==================================================
+
+FOR INSURANCE INDUSTRY:
+1. RISK STRATIFICATION:
+   � Implement smoking status as primary risk factor in pricing models
+   � Develop age-adjusted risk categories with smoking multipliers
+   � Consider regional cost adjustments for geographic risk variations
+   � Maintain gender-neutral pricing based on statistical evidence
+
+2. PREVENTION INVESTMENTS:
+   � Fund smoking cessation programs with measurable ROI tracking
+   � Partner with employers on workplace wellness initiatives
+   � Invest in early intervention programs for young adult smokers
+   � Develop BMI management programs with graduated incentives
+
+3. PRODUCT INNOVATION:
+   � Create wellness-linked premium discount programs
+   � Develop predictive analytics for high-risk population identification
+   � Implement wearable technology integration for real-time risk monitoring
+   � Design behavioral change incentive programs
+
+FOR PUBLIC HEALTH SECTOR:
+1. TARGETED INTERVENTIONS:
+   � Prioritize smoking cessation as highest-impact health investment
+   � Develop age-specific cessation programs based on cost-benefit analysis
+   � Address regional health disparities through localized programs
+   � Create lifestyle intervention programs targeting dining and exercise habits
+
+2. POLICY INITIATIVES:
+   � Strengthen tobacco control measures with demonstrated cost benefits
+   � Implement obesity prevention programs in high-risk demographics
+   � Develop food environment policies addressing convenient unhealthy options
+   � Create built environment changes supporting active lifestyles
+
+COLLABORATIVE OPPORTUNITIES
+==================================================
+
+SHARED INVESTMENT STRATEGIES:
+� Joint funding of smoking cessation programs with shared cost savings
+� Collaborative wellness program development and implementation
+� Shared data analytics platforms for population health monitoring
+� Co-invested research on intervention effectiveness and ROI
+
+BEHAVIORAL NUDGING INITIATIVES:
+� Premium reduction incentives tied to verified lifestyle changes
+� Gamification of health behaviors with insurance discounts
+� Community-based wellness challenges with insurance sponsorship
+� Technology-enabled behavior tracking with reward systems
+
+POLICY ALIGNMENT:
+� Insurance premium structures supporting public health goals
+� Regulatory frameworks enabling wellness-based pricing
+� Data sharing agreements for population health improvement
+� Coordinated messaging on lifestyle risk factors
+
+ECONOMIC IMPACT PROJECTIONS
+==================================================
+
+SMOKING CESSATION IMPACT:
+� 10% reduction in smoking population could decrease average claims by 8-12%
+� ROI on cessation programs: $3-5 saved per $1 invested over 5-year horizon
+� Premium reductions of 15-20% achievable for verified non-smoking status
+
+OBESITY MANAGEMENT IMPACT:
+� 5% BMI reduction in population could decrease claims by 3-5%
+� Workplace wellness programs show 2:1 ROI in reduced healthcare costs
+� Preventive care investments reduce high-cost outlier populations
+
+INDUSTRY-WIDE BENEFITS:
+� Reduced claim volatility through better risk prediction
+� Improved customer retention through wellness engagement
+� Enhanced competitive positioning through innovative health programs
+� Strengthened regulatory relationships through public health partnership
+
+CONCLUSION
+==================================================
+
+The comprehensive analysis of insurance claims data reveals smoking as the
+dominant risk factor, creating unprecedented opportunities for collaborative
+intervention between insurance providers and public health authorities.
+
+By implementing evidence-based wellness programs, both sectors can achieve
+their primary objectives: insurance companies can reduce claims costs and
+improve risk profiles, while public health agencies can improve population
+health outcomes with measurable financial validation.
+
+The data demonstrates that modest investments in lifestyle interventions,
+particularly smoking cessation and obesity prevention, can generate
+substantial returns through reduced healthcare utilization. This creates
+a sustainable model where healthier populations benefit from lower
+insurance premiums, while insurance companies benefit from reduced
+risk exposure and improved profitability.
+
+The path forward requires coordinated action, shared investment, and
+innovative program design that aligns financial incentives with health
+outcomes. The data provides a clear roadmap for this collaboration,
+with smoking cessation as the highest-priority intervention and age-
+stratified approaches offering the greatest cost-effectiveness.
+ """)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
