@@ -638,116 +638,31 @@ with st.expander("Report on the Determinants of Health Insurance Charges : A Sta
 
     st.markdown("""
 
-        ### Report on the Determinants of Health Insurance Charges: A Statistical and Analytical Review
+      Insurance Premium Prediction — A Clear Analysis
+1. Random Forest: Predictions vs Reality
 
+We compare the model’s predicted charges with the actual charges. Blue dots: Each represents a single insurance case. Red dashed line: Exact match between prediction and truth. Most dots sit close to the red line. For most people, the model gives a fair estimate. Charges rise as predictions rise. For low to middle charges (under $20,000), it’s usually spot on. For high charges (over $40,000), the gap between prediction and reality widens. The worst mistakes are for rare, costly cases such as long hospital stays or complex surgery — the model tends to underestimate them. Error measure: The root mean squared error (RMSE) tells us how far predictions tend to be from reality. If RMSE is about $4,200, that’s the typical gap for an average case. For mid‑range policies (about $10,000–$20,000), that gap can be 20–40% of the total — not trivial. For public health forecasts or setting premiums, the model is good for broad trends but risky for individual extremes.
+2. Correlation Heatmap
 
+We measure how strongly age, body mass index (BMI), and the number of children relate to charges. Findings: Age and BMI both push costs up. The number of children makes very little difference. Meaning: Older and heavier customers tend to cost more. Children in the household are less relevant for an adult’s medical bill. Limits: Correlation is not cause. We don’t see hidden factors such as smoking or chronic illness in this measure.
+3. Distribution of Charges
 
-        This report presents a statistical and analytical review of a dataset containing health insurance charge information. The primary objective is to identify key factors influencing these charges, build a predictive model, and interpret the findings from a statistical, ethical, and commercial perspective. The analysis is conducted with a methodology suitable for a university-level data analytics course, using both descriptive and inferential statistics to draw robust conclusions.
+We plot every person’s charges to see the shape of the data. Costs are skewed: most are modest, but a few are very high. Those few expensive cases dominate the total bill. Implication: An insurer needs buffers, such as reinsurance, to cover these exceptional claims. In public health, it’s these high‑need patients who may benefit most from targeted care.
+4. Charges by Smoking Status
 
+A simple boxplot shows the point: Smokers pay much more, on average, and their costs vary more widely and run to higher extremes. Take‑away: Smoking remains a clear risk — both medically and financially.
+5. BMI and Charges, with Smoking
 
+Plotting BMI on the x‑axis and charges on the y‑axis, and colouring points by smoking status, we see that higher BMI means higher charges on average, and smokers cost more than non‑smokers at the same BMI. Conclusion: The two risks act together, not separately.
+6. Median Charges by Region
 
-        ***
+Data split into four regions shows medians differ — some regions are costlier than others. This could be due to local prices, population health, or care access. Implication: Region should be part of pricing and planning.
+7. Feature Importance in the Model
 
+The model ranks smoker status, age, and BMI as the most useful factors. Location and sex matter less. For both insurers and public health bodies, getting accurate data on the top factors is vital.
+Common Weaknesses
 
-
-        #### 2. Methodology and Statistical Findings
-
-
-
-        The analysis was performed on a dataset of 1338 instances, each containing variables such as age, sex, BMI, number of children, smoking status, region, and medical charges.
-
-
-
-        ##### 2.1. Descriptive Statistics
-
-
-
-        Initial analysis of the `charges` variable revealed a highly right-skewed distribution, with a mean of **$13,270.42** and a median of **$9,382.03**. The standard deviation was **$12,110.01**, indicating a wide variance in charges. This asymmetry is a critical finding, as it suggests a small number of high-cost cases drive the overall average.
-
-
-
-        ##### 2.2. Predictive Modelling
-
-
-
-        A predictive model was built using a **Random Forest Regressor** to determine the relative importance of each feature in predicting charges.
-
-
-
-        * **Key Predictors:** The feature importance analysis revealed that **smoker status** is by far the most influential variable, followed by **age** and **BMI**. Other variables, such as `children`, `region`, and `sex`, had considerably lower predictive power.
-
-        * **Model Performance:** The model achieved a high level of predictive accuracy. Using a typical 80/20 train-test split, a model of this type would likely yield an **R² value of approximately 0.85**, indicating that it explains 85% of the variance in charges. The **Root Mean Squared Error (RMSE)** would typically be around **$4,200**, which represents the average deviation of the model's predictions from the actual charges.
-
-
-
-        ##### 2.3. Statistical Inference and Relationship Analysis
-
-
-
-        * **Smoker vs. Non-Smoker Charges:** A two-sample t-test or ANOVA on the `charges` variable would show a highly statistically significant difference between smokers and non-smokers (p-value < 0.001). The mean charge for smokers (**$32,050.23**) is approximately **$23,600** higher than for non-smokers (**$8,434.20**), a difference that is both statistically and economically significant.
-
-        * **Age and BMI Correlation:** A Pearson correlation analysis revealed a strong positive correlation between `age` and `charges` (r ≈ 0.3), and a moderate positive correlation between `BMI` and `charges` (r ≈ 0.2). This confirms that as age and BMI increase, so too do insurance charges.
-
-        * **Gender and Charges:** The analysis found no statistically significant difference in the mean charges between men and women, confirming that gender is not a primary driver of cost in this dataset.
-
-
-
-        ***
-
-
-
-        #### 3. Ethical and Legal Considerations
-
-
-
-        From a data ethics and legal standpoint, this analysis highlights several key responsibilities.
-
-
-
-        * **Algorithmic Bias:** The finding that `sex` has a low predictive importance is crucial. It demonstrates that a model built on this data does not rely on gender to determine premiums, which is a key requirement for avoiding discriminatory practices and adhering to data protection laws like the GDPR.
-
-        * **Transparency and Accountability:** An insurance company using such a model would have a legal and ethical obligation to be transparent about the data it collects and how its algorithms use this data to determine premiums. This includes explaining to consumers that factors like smoking status and BMI are the primary drivers, not protected characteristics.
-
-
-
-        ***
-
-
-
-        #### 4. Strategic Implications and Recommendations
-
-
-
-        The statistical findings have direct implications for various sectors.
-
-
-
-        ##### 4.1. For Public Health
-
-        The analysis provides robust statistical evidence that **smoking and high BMI are the most significant modifiable risk factors** for high healthcare costs. Public health campaigns should leverage this data to justify and direct resources towards smoking cessation and obesity prevention programs.
-
-
-
-        ##### 4.2. For the Marketing Industry
-
-        The analysis enables highly targeted and ethical marketing. Campaigns can be designed to directly address the key cost drivers:
-
-        * **Targeted Messaging:** Marketers can create distinct campaigns for smokers, highlighting the significant financial savings of quitting (e.g., a potential premium reduction of over **$23,000**).
-
-        * **Value-Based Marketing:** Campaigns can focus on promoting health and wellness, with messaging that connects positive lifestyle choices to lower costs, thus transforming insurance from a punitive product into a partner in well-being.
-
-
-
-        ##### 4.3. For Consumers
-
-        Consumers can use this information to take direct control of their premiums.
-
-        * **Prioritize Quitting Smoking:** The most impactful action a consumer can take is to quit smoking, as this single change is associated with the largest potential savings.
-
-        * **Maintain a Healthy Lifestyle:** Given the strong correlation between BMI and costs, managing weight through diet and exercise is a statistically proven way to reduce long-term healthcare expenses.
-
-        * **Be Proactive:** The right-skewed distribution of charges highlights the importance of preventative care to avoid the costly outlier events that can financially devastate a household.
-
+The data comes from a single source and may not match real‑world insurer populations. Missing details — diagnoses, previous care — mean we rely on rougher proxies like age and BMI. The model struggles with rare, high‑cost cases.
         """)
 
 
@@ -903,6 +818,7 @@ Smoking, by contrast, is a voluntary and well-proven risk factor with a direct c
 The strongest and most actionable insight from this dataset is that smoking is the single biggest cost driver in individual health insurance, followed by age. BMI has a measurable effect but should be handled with care to avoid ethical and reputational risks. A pricing strategy anchored in these facts can be both fair and financially robust.
 
     """)
+
 
 
 
