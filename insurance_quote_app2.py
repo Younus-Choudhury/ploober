@@ -754,7 +754,7 @@ with st.expander("Report on the Determinants of Health Insurance Charges : A Sta
 
 
 
-with st.expander("AI generated Print & Radio Ad Campaign ideas"):
+with st.expander(" Report on the Determinants of Health Insurance Charges: A Statistical and Analytical Review"):
 
 
     st.markdown("""
@@ -903,6 +903,7 @@ Smoking, by contrast, is a voluntary and well-proven risk factor with a direct c
 The strongest and most actionable insight from this dataset is that smoking is the single biggest cost driver in individual health insurance, followed by age. BMI has a measurable effect but should be handled with care to avoid ethical and reputational risks. A pricing strategy anchored in these facts can be both fair and financially robust.
 
     """)
+
 
 
 
