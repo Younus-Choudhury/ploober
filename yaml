@@ -1,0 +1,33 @@
+# pipeline.yaml
+tasks:
+  - source: data_preprocessing.py
+    product:
+      data: products/clean_insurance_data.csv
+      # This tells Ploomber to save a copy of the cleaned data
+      # as a CSV file in a 'products' directory.
+
+  - source: model_training.py
+    product:
+      model: products/rf_pipeline.joblib
+      # The trained model pipeline will be saved here.
+      metrics: products/metrics.json
+      # Model evaluation metrics (e.g., R2, RMSE) will be saved here.
+    # The 'in' key defines dependencies.
+    # This task needs the output from the 'data_preprocessing' task to run.
+    in:
+      data: "{{product['data']}}"
+
+  - source: app.py
+    # This task is a "side-effect" task; it doesn't create a traditional
+    # data product but rather runs the Streamlit app.
+    # The `cmd` key tells Ploomber to execute this file with `streamlit run`.
+    # The `shell` executor is used for running external commands.
+    executor: shell
+    # The 'product' for this task is a placeholder file
+    # that signals the task has been completed successfully.
+    product: products/app_executed.txt
+    # This app depends on the trained model and metrics from the
+    # 'model_training' task.
+    in:
+      model: "{{product['model']}}"
+      metrics: "{{product['metrics']}}"
